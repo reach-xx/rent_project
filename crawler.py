@@ -17,7 +17,7 @@ from time import sleep
 # sleep(10000)
 
 money_pattern = re.compile(r'<b>(%d*)<\/b>')
-csv_file = open("rent.csv", "w")
+csv_file = open("rent.csv", "w", encoding='utf8')
 csv_writer = csv.writer(csv_file, delimiter=',')
 PAGE = 1
 times = 0
